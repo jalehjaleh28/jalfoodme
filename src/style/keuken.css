@@ -1,0 +1,25 @@
+
+.keukenul{
+    list-style: none;
+    display: grid;
+    column-gap: 45px;
+    row-gap: 20px;
+    grid-template-columns: repeat(14 , 3rem);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+.datakeuken{
+    width: 100%;
+    margin: 5px;
+    padding: 10px 5px;
+    background-color: aqua;
+
+}
+.datakeuken span{
+    width: 100%;
+    color: red;
+}

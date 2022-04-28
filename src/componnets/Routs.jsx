@@ -1,34 +1,32 @@
 import React from "react";
-
-import App from "../App";
-
 import { useLocation, Routes, Route } from "react-router-dom";
-
 import {About} from "./About";
-
-// import CatgoryShow from "./components/CatgoryShow";
-
-// import CatgoryItem from "./components/CatgoryItem";
+import {IngredienteItem} from './IngredienteItem'
 import { Contact } from "./Contact";
+import { Home } from "./Home";
+import { IngredienteItemSelect } from "./IngredienteItemSelect";
+import KeukenItems from "./KeukenItems";
+import {Login} from "./Login"
+// import { KeukenItemSelect } from "./KeukenItemSelect";
 
-function Routess() {
+const Routess =() => {
   const location = useLocation();
 
   return (
   
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<App />} />
-
+        <Route path="/" exact element={<Home/>} />
+        <Route path="ingrediente/:id" element={<IngredienteItem/>}/>
         <Route path="about" element={<About/>} />
         <Route path="contact" element={<Contact/>} />
-
-        {/* <Route path="catgory/:id" element={<CatgoryShow />} /> */}
-
-
-        {/* <Route path="catgory/:id/:id" element={<CatgoryItem />} /> */}
+        {/* <Route path="ingrediente/:id" element={<IngredienteItem />} /> */}
+        <Route path="ingrediente/:id/:id" element={<IngredienteItemSelect />} />
+        <Route path="keuken/:id/:id" element={<IngredienteItemSelect />} />
+        <Route path="keuken/:id" element={<KeukenItems/>}/>
+        <Route path="login" element={<Login/>} />
       </Routes>
    
-  );
+  ); 
 }
 
 export default Routess;

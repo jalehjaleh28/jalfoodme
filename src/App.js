@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Nav from './componnets/nav';
 
-import Baner from './componnets/baner';
+import Baner from './componnets/Baner';
 
 function App() {
   return (

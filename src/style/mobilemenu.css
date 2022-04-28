@@ -1,0 +1,101 @@
+.keukenmobile , .ingredantemobile{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    
+
+}
+.hidekeukenmobile , .hideingredantemobile{
+    display: none;
+}
+.showkeukenmobile {
+    position:absolute;
+    min-width: 100vw;
+    padding: 10px 0;
+    top:0;
+    left: -25rem;
+    background-color:bisque;
+    
+}
+.showingredantemobile {
+    position:absolute;
+    min-width: 50%;
+    padding: 10px 0;
+    top:10rem;
+    left: -55rem;
+    background-color:bisque;
+    
+}
+@media (max-width: 911px){
+   
+    .showingredantemobile {
+        position:absolute;
+        min-width: 50%;
+        padding: 10px 0;
+        top:0;
+        left: -29rem;
+        background-color:bisque;
+        
+    }
+    .showkeukenmobile {
+        position:absolute;
+        min-width: 100%;
+        padding: 10px 0;
+        top:0;
+        left: 10rem;
+        background-color:bisque;
+        
+    }
+    .mobile-ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+    }
+    .mobile-ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 5px;
+        min-height: 4rem;
+    }
+    
+.mobilemenulink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+
+}
+.mobilemenulink span{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  }
+@media (max-width: 600px) {
+    .showingredantemobile {
+        position:absolute;
+        min-width: 50%;
+        padding: 10px 0;
+        top:0;
+        left: -16rem;
+        background-color:bisque;
+        
+    }
+   
+      }

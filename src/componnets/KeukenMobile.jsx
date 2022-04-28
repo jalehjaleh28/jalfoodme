@@ -1,11 +1,10 @@
 import axios from 'axios';
 import React , {useState , useEffect} from 'react';
-import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
-import "../style/keuken.css"
+import "../style/keukenmobile.css"
 
 
-const Keuken = () => {
+const KeukenMobile = () => {
     const [fetch , setFetch] = useState([]);
     const api = async ()=>{
         const res = await axios.get("https://themealdb.com/api/json/v1/1/list.php?a=list" )
@@ -18,19 +17,18 @@ const Keuken = () => {
     // console.log(fetch)
     const showData = fetch.map((item) =>{
         return(
-           <Link to={`keuken/${item.strArea}`}> <li className='datakeuken' key={item.strArea}>
+            <li className='datakeukenmobile' key={item.strArea}>
                 <span>{item.strArea}</span>
-            </li></Link>
+            </li>
         )
     })
-    console.log(fetch)
   return (
    <>
-      <ul className='keukenul'>
+      <ul className='keukenulmobile'>
          {showData}
       </ul>
    </>
   )
 }
 
-export default Keuken
+export default KeukenMobile

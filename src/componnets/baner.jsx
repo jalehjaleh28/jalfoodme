@@ -15,4 +15,4 @@ const Baner = () =>{
         </div>
     )
 }
-export default Baner;
+export default Baner

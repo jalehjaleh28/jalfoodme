@@ -1,8 +1,10 @@
 .baner{
-
+    display: flex;
+    align-items: center;
+    justify-items: center;
     background-image: url(../asset/salad.jpg);
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 20rem;
     background-repeat: no-repeat;
     

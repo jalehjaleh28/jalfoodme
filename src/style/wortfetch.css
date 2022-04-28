@@ -1,0 +1,49 @@
+.wort-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    
+
+
+}
+.wort-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    flex-direction: column;
+     
+   
+
+}
+.wort-container div h2{
+    text-align: center;
+    margin: 2rem 5px;
+    padding: 10px;
+}
+.wort-container div ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    
+   
+}
+.wort-container div ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2%;
+    padding: 2px;
+    margin-bottom: 2rem 0;
+    
+}
+
+.wort-link{
+    text-decoration: none;
+    cursor: pointer;
+    
+}

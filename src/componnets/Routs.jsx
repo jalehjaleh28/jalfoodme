@@ -6,8 +6,10 @@ import { Contact } from "./Contact";
 import { Home } from "./Home";
 import { IngredienteItemSelect } from "./IngredienteItemSelect";
 import KeukenItems from "./KeukenItems";
-import {Login} from "./Login"
-// import { KeukenItemSelect } from "./KeukenItemSelect";
+import {Login} from "./Login";
+import { Notfound } from "./Notfound";
+import { SearchbyWort } from "./SearchbyWort";
+
 
 const Routess =() => {
   const location = useLocation();
@@ -24,6 +26,9 @@ const Routess =() => {
         <Route path="keuken/:id/:id" element={<IngredienteItemSelect />} />
         <Route path="keuken/:id" element={<KeukenItems/>}/>
         <Route path="login" element={<Login/>} />
+        <Route path="wort/:id" element={<SearchbyWort/>}/>
+        <Route path="wort/:id/:id" element={<IngredienteItemSelect/>}/>
+        <Route path="*" element={<Notfound/>}/>
       </Routes>
    
   ); 

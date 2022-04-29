@@ -3,9 +3,10 @@
     --mytextcolor:#fff;
     --shadow:#D7DBDD;
     --black:#17202A;
-    --submenu:#58D68D;
+    --submenu:#d6d658;
     
    }
+   @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 .rectangle{
     background-color: var(--mybgcolornav);
      width: 100vw;
@@ -23,6 +24,11 @@ align-items: center;
 justify-content: center;
     
      width: 100%;
+ }
+ .logo span{
+    font-family: 'Water Brush', cursive;
+    font-size: 35px;
+    color: var(--mytextcolor)
  }
  .menu{
      display: grid;
@@ -79,16 +85,17 @@ justify-content: center;
      display: none;
  }
  .showkeuken{
-     /* display:flex;
-     align-items: center;
-     justify-content: center; */
+   
      position:absolute;
     min-width: 100vw;
       padding: 10px 0;
-     top:6rem;
+     top:5.8rem;
      left: 0; 
-     background-color: var(--submenu);
+     background: rgb(238,174,202);
+     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,233,148,1) 100%);
      box-shadow: 0 5px 10px var(--shadow);
+     z-index: 2;
+    
      
     
  }
@@ -99,9 +106,13 @@ justify-content: center;
     position:absolute;
     min-width: 100vw;
     padding: 10px 0;
-    top:6rem;
+    top:5.8rem;
     left: 0;
-    background-color:var(--submenu);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,233,148,1) 100%);
+    z-index: 2;
+    box-shadow: 0 5px 10px var(--shadow);
+    
    
 }
  .hideingredante{

@@ -18,7 +18,7 @@ const Keuken = () => {
     // console.log(fetch)
     const showData = fetch.map((item) =>{
         return(
-           <Link to={`keuken/${item.strArea}`}> <li className='datakeuken' key={item.strArea}>
+           <Link to={`keuken/${item.strArea}`} className= "keukenul-link"> <li className='datakeuken' key={item.strArea}>
                 <span>{item.strArea}</span>
             </li></Link>
         )

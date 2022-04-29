@@ -14,7 +14,7 @@ const MenuState= () => {
 }
   return (
     <>
-      <Link to="/login"><span className="login">Login</span></Link>
+      <Link to="/login" className= "login-link"><span>Login</span></Link>
       <span className="bar" onClick={MenuState}>
         {barSelect ? <MdClose/> : <FaBars />}
       </span>

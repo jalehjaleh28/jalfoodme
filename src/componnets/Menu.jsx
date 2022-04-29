@@ -80,7 +80,7 @@ export const Menu = () => {
         </li>
         <li onClick={() => OverOns()}>
           <Link to="/about" className={overOns ? "alink" : "nlink"}>
-            <span className="over">Over ons</span>
+            Over ons
           </Link>
         </li>
         <li onClick={() => Contact()}>

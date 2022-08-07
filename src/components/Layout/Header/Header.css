@@ -1,0 +1,60 @@
+
+header{
+    background-color: var(--bgheader);
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
+    padding: 0 80px;
+ }
+ .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      text-decoration: none;
+ }
+ .logo-img{
+    width: 60px;
+ }
+ .logo span{
+    font-family: 'Water Brush', cursive;
+    font-size: 33pt;
+    color: var(--mytextcolor)
+ }
+
+
+@media (max-width: 768px) {
+   header {
+     padding:0 60px;
+   }
+}
+@media (max-width: 560px) {
+   header {
+     padding:0 45px;
+   }
+}
+@media (max-width: 450px) {
+   header {
+     padding:0 20px;
+   }
+   .logo-img{
+      width: 50px;
+   }
+   .logo span{
+      font-size: 28pt;
+   }
+}
+@media (max-width: 355px) {
+   header {
+     padding:0 15px;
+   }
+   .logo-img{
+      width: 40px;
+   }
+   .logo span{
+      font-size: 25pt;
+   }
+}
+
+ 

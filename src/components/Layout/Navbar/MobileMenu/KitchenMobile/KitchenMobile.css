@@ -1,0 +1,58 @@
+.keukenulmobile {
+  list-style: none;
+  display: grid;
+  align-items: center;
+  background: white;
+  column-gap: 9px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 327px;
+  font-size: 12px;
+}
+.datakeukenmobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.datakeukenmobile a {
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+}
+.datakeukenmobile span {
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .keukenulmobile {
+    left: 9rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 2.5rem);
+  }
+}
+@media (max-width: 670px) {
+  .keukenulmobile {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(9, 2.5rem);
+  }
+}
+@media (max-width: 550px) {
+  .keukenulmobile {
+    max-height: 320px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(14, 2.5rem);
+  }
+}
+@media (max-width: 450px) {
+ 
+  .keukenulmobile {
+    max-height:326px;
+    column-gap: 0;
+    left: 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(28, 3rem);
+  }
+  .datakeukenmobile span {
+    padding: 12px 9px;
+  }
+  
+}

@@ -1,0 +1,142 @@
+
+.container-details-recipe {
+ padding: 50px
+}
+.recipe-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+}
+.pic{
+    width: 100%;
+}
+.pic img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.properties-recipe {
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column; */
+  width: 100%;
+  padding: 20px 0;
+}
+.properties-recipe p {
+  width: 100%;
+  overflow-y: hidden;
+  margin: 20px 0;
+  font-size: clamp(1.1rem, 1vw, 2.2rem);
+}
+.properties-recipe p span:first-child {
+  font-weight: 700;
+  margin-right: 15px;
+  /* width: 25%; */
+  /* display: inline-block; */
+}
+.properties-recipe p span:last-child {
+    /* display: inline-block; */
+   /* width: 70%; */
+  }
+
+.namefood {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.like-icon-recipe {
+  font-size: 20pt;
+  color: red;
+}
+.details {
+    text-align: center;
+}
+.details-title {
+    width: 50%;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-bottom: solid 2px rgb(110, 110, 120);
+  margin: 2rem auto;
+  
+ 
+}
+.details-title span {
+ 
+}
+.link-info {
+    display: inline-block;
+  color: rgb(255, 119, 0) !important;
+  text-decoration: none;
+  width: 70%;
+}
+.detail1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px auto;
+}
+.detail1 span {
+  font-size: 1rem;
+}
+.detail1 span:last-child {
+  text-align: end;
+}
+
+.recept {
+    width: 80%;
+    padding: 10px 5px;
+    text-align: justify;
+    margin: auto;
+}
+.recept span {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  line-height: 25px;
+}
+@media (min-width: 576px) { 
+    .detail1{
+        font-size: 1.2rem;
+        width: 80%;
+      }
+      .detail1:hover {
+        transform: scale(1.2, 1.2);
+        border-bottom: solid 1px rgb(110, 110, 120);
+      }
+}
+@media (min-width: 768px) { 
+    
+    .pic  {
+        width: 30%;
+      }
+      .properties-recipe{
+        width: 60%;
+      }
+      /* .link-info {
+        display: inline-block;
+        
+    }
+      .properties-recipe p span:first-child{
+        width: 121px;
+        display: inline-block;
+       
+      } */
+      .detail1{
+        width: 50%;
+      }
+      .detail1:hover {
+        transform: scale(1.5, 1.5);
+        border-bottom: solid 1px rgb(110, 110, 120);
+      }
+}
+@media (min-width: 992px) { 
+    .detail1{
+        width: 35%;
+      }
+ }

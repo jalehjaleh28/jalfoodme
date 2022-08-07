@@ -1,0 +1,27 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+:root{
+   
+    --bgheader: #4D6508;
+    --mybgcolornav:#618102;
+    --mytextcolor:#fff;
+    --shadow:#D7DBDD;
+    --black:#17202A;
+    --submenu:#d6d658;
+    --select:#edac02;
+    
+   }
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+body {
+    background: #ecf0f3;
+}
+

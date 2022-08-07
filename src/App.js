@@ -1,16 +1,36 @@
-import React from 'react';
-import './App.css';
-import Nav from './componnets/nav';
+import React,{useState,useEffect} from "react";
+import RoutesMap from "./routes";
+import Header from "./components/Layout/Header";
+import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
+import IsLoginContext from "./contexts/IsLoginContext";
+import FavItemsContext from "./contexts/FavItemsContext";
 
-import Baner from './componnets/Baner';
 
 function App() {
+  const checkIslogin=()=>{
+    if (localStorage.getItem("token")) {
+      return true
+    }
+    return false
+  }
+  const [isLogin, setIsLogin] = useState(checkIslogin);
+  const [favItems, setFavItems] = useState([]);
+
+  useEffect(()=>{
+    if (localStorage.getItem("favoriteItems")) {
+      setFavItems(JSON.parse(localStorage.getItem("favoriteItems")))
+    }
+  })
   return (
-    <div className="App">
-     <Nav/>
-     <Baner/>
-     
-    </div>
+    <IsLoginContext.Provider value={ [isLogin, setIsLogin]}>
+    <FavItemsContext.Provider value={ [favItems, setFavItems]}>
+      <Header/>
+      <Navbar />
+      <RoutesMap />
+      <Footer />
+    </FavItemsContext.Provider>
+    </IsLoginContext.Provider>
   );
 }
 

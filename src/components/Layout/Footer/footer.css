@@ -1,0 +1,77 @@
+.footer-container {
+  background-color: rgb(41, 41, 41);
+  padding: 20px 15px;
+  text-align: center;
+}
+.footer-icons {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons a {
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid 1px rgb(122, 122, 122);
+  padding: 10px;
+  font-size: 27px;
+  color: rgb(206, 207, 208);
+  cursor: pointer;
+  margin: 16px;
+}
+.footer-icons a:hover {
+  border: dotted 1px rgb(231, 230, 230);
+  box-shadow: 0 1px 10px rgb(254, 254, 254);
+  transition: all 0.5s ease-in-out;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+.footer-menu div {
+  margin: 20px;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: var(--select);
+}
+.footer-copy-right {
+  margin: 30px 0;
+  color: white;
+}
+.footer-brand {
+  font-size: 15pt;
+  display: inline-block;
+  text-decoration: none;
+}
+.brand-part1 {
+  color: #709802;
+}
+.brand-part2 {
+  color: #fdba10;
+}
+
+@media (max-width: 550px) {
+    .footer-menu div {
+        margin: 15px;
+      }
+
+  .footer-icons a {
+    width: 20px;
+    height: 22px;
+    padding: 7px;
+    font-size: 20px;
+    margin: 5px;
+  }
+  .footer-link{
+    font-size: 10pt;
+  }
+}

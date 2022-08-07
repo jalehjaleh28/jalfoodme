@@ -1,0 +1,67 @@
+.keukenmobile,
+.ingredantemobile {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.hidekeukenmobile,
+.hideingredantemobile {
+  display: none;
+}
+
+.showingredantemobile,.showkeukenmobile {
+    box-shadow: 3px 3px 6px 2px #00000026;
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+    background: white;
+    overflow: hidden;
+}
+.mobile-ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .mobile-ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+  }
+
+  .mobilemenulink {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    color: black;
+    padding-left: 3rem;
+}
+.mobile-link:hover{
+    color:var(--select)
+}
+@media (max-width: 768px) {
+    .showingredantemobile, .showkeukenmobile{
+        left: 16rem;
+    }
+ 
+}
+@media (max-width: 655px) {
+    .showingredantemobile,.showkeukenmobile {
+        left: 12rem;
+    }  
+}
+@media (max-width: 450px) {
+   
+    
+}
+
+

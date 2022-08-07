@@ -1,0 +1,137 @@
+nav {
+  background-color: var(--mybgcolornav);
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.menu-items li {
+  font-family: Tahoma;
+  font-size: 13pt;
+  padding: 17px 0;
+}
+.menu-items li:hover .sub-nav {
+  display: block;
+}
+.menu-item li span {
+  padding: 0 30px;
+  width: 100%;
+}
+
+.hidekeuken {
+  display: none;
+}
+.sub-nav {
+  display: none;
+  font-family: Tahoma;
+  font-size: 11pt;
+  position: absolute;
+  padding: 17px 0;
+  top: 9.5rem;
+  left: 0;
+  background: rgb(250 222 150);
+  background: radial-gradient(
+    circle,
+    rgb(250 222 150) 0%,
+    rgba(194, 233, 148, 1) 100%
+  );
+  box-shadow: 0 5px 10px var(--shadow);
+  z-index: 100;
+  width: 100%;
+}
+
+.hideingredante {
+  display: none;
+}
+
+.keuken {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.ingredante {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.white {
+  color: var(--mytextcolor);
+  cursor: pointer;
+}
+.dark {
+  color: var(--black);
+  cursor: pointer;
+}
+
+.nlink {
+  padding: 0 20px;
+  color: var(--mytextcolor);
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.alink {
+  padding: 0 20px;
+  color: var(--select);
+  text-decoration: none;
+  cursor: pointer;
+}
+.alink:hover,
+.nlink:hover {
+  color: #feda7d;
+}
+
+.bar {
+  display: none;
+  color: white;
+  font-size: 16pt;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.menushow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  background-color: white;
+  width: 255px;
+  z-index: 700;
+  box-shadow: 3px 3px 6px 2px #00000026;
+}
+.menunotshow {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-items {
+    display: none;
+  }
+}
+@media screen and (max-width: 655px) {
+  .menushow {
+    width: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bar {
+    display: inline-block;
+  }
+
+  .menunotshow {
+    display: none;
+  }
+
+  .menushow {
+    display: flex;
+  }
+}
+

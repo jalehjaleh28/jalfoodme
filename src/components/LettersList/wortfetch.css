@@ -1,0 +1,56 @@
+
+.wort-container{
+    text-align: center;
+}
+.wort-container div{
+    margin: 40px 0; 
+}
+.wort-container div h2{
+    margin: 15px 0;
+}
+.hint-search{
+    margin-bottom: 40px;
+    color: gray;
+}
+.wort-container div ul{
+    display: grid;
+    grid-template-columns: repeat(27,5px);
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+.wort-container div ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    padding: 2px;
+    margin-bottom: 2rem 0;
+    
+}
+
+.wort-link{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.wort-link:hover{
+    color: var(--select);
+}
+
+@media (max-width:1000px){
+    .wort-container div ul{
+        grid-template-columns: repeat(13,5px);
+        grid-template-rows: auto;
+    }
+}
+
+/* @media (max-width:320px){
+    .wort-container div ul{
+        grid-template-columns: repeat(4,5px);
+    }
+} */

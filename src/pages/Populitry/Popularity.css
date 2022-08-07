@@ -1,0 +1,22 @@
+.main-popularity{
+    min-height: 500px;
+    padding: 30px 0;
+    text-align: center;
+}
+.title-popularity{
+    
+}
+.description-popularity{
+    color: rgb(61, 61, 61);
+    margin: 20px 0 40px 0 ;
+}
+.countries-list{
+    width: 264px;
+    font-size: 14pt;
+    padding: 10px 20px;
+    background: #edac02;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    
+}
